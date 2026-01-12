@@ -4,15 +4,15 @@ import time
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
-from core.config import SystemConfiguration
-from core.logger import ResearchLogger
-from core.video_io import ThreadedVideoInterface
-from core.preprocessing import TensorTransformer
-from core.perception import FeatureExtractionFactory
-from core.cognition import TemporalReasoningUnit
-from core.analytics import UncertaintyQuantifier
-from core.control import AdaptiveFlowPID
-from core.telemetry import PerformanceMonitor
+from sentinel_core.config import SystemConfiguration
+from sentinel_core.logger import ResearchLogger
+from sentinel_core.video_io import ThreadedVideoInterface
+from sentinel_core.preprocessing import TensorTransformer
+from sentinel_core.perception import FeatureExtractionFactory
+from sentinel_core.cognition import TemporalReasoningUnit
+from sentinel_core.analytics import UncertaintyQuantifier
+from sentinel_core.control import AdaptiveFlowPID
+from sentinel_core.telemetry import PerformanceMonitor
 
 def main(video_path):
     config = SystemConfiguration()
